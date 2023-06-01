@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dopetrope by HTML5 UP</title>
+		<title>Jocelyn Kavanagh</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -49,39 +49,35 @@
 							<article class="box post">
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 								<header>
-									<h2>Turn-Taking for Robotic Musicians</h2>
+									<h2>FOREST</h2>
 									<p>Graduate Research</p>
 								</header>
 								<p>
-									Featured skills: Python, Max/MSP, Research, Data Analysis, Musicology, AI, Robotics
+									Featured skills: Python, Max/MSP, MatLab AI, Sound Design, Research, Robotics
 								</p>
 								<p>
-									Turn-taking is an important part of improvisational, collaborative music, and it can be likened to human conversation. However, in the robotic musicianship space, turn-taking is typically fixed to straight-ahead schemes. My research aims to develop a new musical turn-taking model based on conversational analysis and observations of free improvisation and jam bands. 
+									FOREST is an NSF funded project aimed at enhancing trust between humans and robots through sound and gesture. I focused on generative music and robotic dances based on patterns. The project used 10 robotic XArm factory robots controlled by Python and Matlab scripts.
 								</p>
 								<section>
 									<header>
-										<h3>Studying Improvisation</h3>
+										<h3>Game of Life</h3>
 									</header>
 									<p>
-										Before development, I studied group improvisation by annotating live performance videos, conducting ethnomusilogical interviews, and reading jazz literature.
-										<br> 
-										I developed an initial turn-taking taxonomy to annotate videos of improvisers and jam bands. The videos were validated for improvisation using their title and comments, and they covered the genres of free jazz, straight ahead jazz, rock, soul, and free improvisation. Annotate.TV was used to facilitate the annotations, and the annotations were marked at turn transition points. Additionally, annotations included notes on specific physical gestures related to turn transitions.
-										<br>
-										I interviewed members of the Atlanta Improvisor Orchestra on their perspectives on improvisation. Interviews focused on the musical features performers listen for when improvising in a group, how individuals construct musical phrases, and how physical gestures impact performance.
+										Cellular automata are a grids of cells with finite states. The state of a cell is modified by a simple algorithm that is influenced by the state's of neighboring cells. 'Game of Life' is the most famous cellular automaton, simulating the dynamical evolution of a society of living organisms.
+									</br>
+										I created a variation on the "Game of Life" to simulate relationships between a group of robots. I extended the algorithm to create aesthetic visual and musical patterns for performance. I extended the traditional rules of the "Game of Life" to encourage more pattern creation on 10 robots. 
+									</br>
+										The 'Game' has 4 states, birth, death, living, and dying, and each of these states are mapped to a robot gesture. A robot's state is determined by its neighbor's states according to the rules below. The starting states are randomized and the 'Game' can continue for any number of iterations. Additionally, the game can start with a contagion effect with the first robot defined as alive then living.
 									</p>
 								</section>
 								<section>
 									<header>
-										<h3>The System</h3>
+										<h3>Flocking</h3>
 									</header>
 									<p>
-										I developed a new model for dynamic leader-follower turn-taking, using the insights gained from the annotations, interviews, and reading improvisation journals. The musician interacts with Shimon, a robotic marimba player, via MIDI keyboard. The system was built with Python and Max/MSP.
+										After studying cellular automaton, I pursued another simulation of emergent behavior in the natural world through flocking. We want to see if we can achieve a flocking behavior with high levels of entitativity despite a limited number of units in a fixed grid. 
 										<br>
-										The system is a state machine with 2 states: leader and follower. In the leader state, Shimon improvises and introduces new themes and ideas. In the follower state, Shimon primarily listens and echoes the user's phrases. The state transitions are determined by varying probabilities set by the length of time in a state and features of the user input including similarity, dynamics, note density, and key.
-										<br>
-										I also developed a genetic algorithm for the musical output during each state. The algorithm uses jazz solos and licks as the initial population and a weighted aggregate function based on similarity for the fitness function. 
-										<br>
-										Finally, I created physical gestures for Shimon. The turn-taking interaction is led by Shimon's gestures. Each state has its own gestures that are based on observations from the video annotations.
+										I used a variation of the Boids algorithm. Boids algorithm is built on 3 rules: cohesion, adhesion, and separtation. Boids algorithm uses mobile agents with state changes informed by an agent's position, velocity, and acceleration. Because the xArm robots are fixed in a grid, the flocking algorithm was modified to use the angles of the robot's seven joints.
 									</p>
 								</section>
 								<section>
