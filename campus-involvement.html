@@ -33,8 +33,8 @@
 								</ul> -->
 							</li>
 							<li><a href="courses.html">Courses</a></li>
-							<!-- <li><a href="#">Campus Involvement</a></li> -->
-							<li><a href="resume.html">Resume</a></li>
+							<li><a href="#">Campus Involvement</a></li>
+							<li><a href="left-sidebar.html">Resume</a></li>
 						</ul>
 					</nav>
 
@@ -48,23 +48,28 @@
 							<article class="box post">
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 								<header>
-									<h2>A Comparison of Chinese and German Lullabies</h2>
-									<p>Computational Musicology Course</p>
+									<h2>Campus Involvements</h2>
 								</header>
 								<p>
-									Featured skills: Python, Jupyter, HumDrum, Music21, Data Analysis, Research, Musicology, Music Theory
+									Featured skills: Python, HTML, JavaScript, SQL, Heroku, Project Management
 								</p>
 								<p>
-									In this project, my partner and studied Chinese and German lullabies to analyze their musicological features that may have cross-culturally soothing
-									effects on a phrase level. Our project was conducted as a formal study - we developed research questions, wrote operational definitions, established hypothesese, and ran statistical analysis. 
+									HeartBeats is a dating app that matches users based on music-tastes. Based on our users' listening histories and music preferences, we develop matches and joint playlists for an immediate icebreaker. 
 								</br>
-									In the first half of the project, we collected and transcribed lullabies for our corpus of symbolic data. We stored the lullabies as .krn files using HumDrum notation. We collected 89 phrases from 12 notated German lullabies and a total of 82 phrases from
-									12 notated Chinese lullabies for our corpus. 
-								</br>
-									We then developed anlaysis tools to access lullaby similarity as defined by different musicological features. We looked at note density, contour, phrase length, step-to-leap ratios, and long-to-short note duration ratios. We used Python, specifically the NumPy and Music21 libraries, to develop our tools and conduct our analysis. 
-								</br>
-									After running the data anlaysis, we ran T-tests and Chi-Square tests to ttest our hypothesis. We found consistency with our hyphothesis, but this may be due to our small sample size and confined population.
+									I worked on the project in a team of two, and I focused on the architecture and implementation the app. I wrote the backend powering the application in Python and the front-end in HTML/CSS and JavaScript. The application runs with Python Flask and MySql, and it is hosted on Heroku. 
 								</p>
+								<section>
+									<header>
+										<h3>Individual Contribution</h3>
+									</header>
+									<p>
+									The application allows the user to create an account, log in, and view other users. Each user's account is tied to their Spotify account. We collect a user's Spotify listening history, playlists, and liked songs using the Spotify API.  
+									</br>
+									The user can scroll through other profiles and views their match score, the other user's top songs, and location. When I user choses a match, they are given a joint playlist in Spotify which they can play right on the HeartBeats site via the Spotify WebSDK.
+									</br>
+									I chose to use Flask for the backend to utilize Python for the matching algorithm, SQL for user data, and standard web programming for the view. I deployed the app on Heroku for the demo period and user testing. 
+									I designed the GUI initially in Figma, then built the functional version using the JUCE visual library. The GUI was connected using JUCE's value state tree to control the preset, efffect, and model states. 
+								</section>
 								<section>
 									<header>
 										<h3>Materials</h3>
